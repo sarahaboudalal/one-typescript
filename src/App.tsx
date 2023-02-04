@@ -1,7 +1,7 @@
 import './App.css';
-import Counter from './components/state/Counter';
-import LoggedIn from './components/state/LoggedIn';
-import User from './components/state/User';
+import Box from './components/context/Box';
+import ThemeContext from './components/context/ThemeContext';
+
 
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div className="App">
-      <LoggedIn />
-      <User />
-      <Counter />
+      <ThemeContext>
+        <Box />
+      </ThemeContext>
     </div>
   );
 }
