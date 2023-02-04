@@ -4,8 +4,8 @@ type ContainerProps = {
     style: React.CSSProperties
 }
 
-export default function Container(props: ContainerProps) {
+export default function Container({ style }: ContainerProps) {
     return (
-        <div style={props.style}>Style Props Excersice</div>
+        <div style={style}>Style Props Excersice</div>
     )
 }
