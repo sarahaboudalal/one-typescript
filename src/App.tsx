@@ -1,12 +1,14 @@
 import './App.css';
 import { Greet } from './components/Greet';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 function App() {
   const personName = {
-    first: 'Sarah',
-    last: 'Abou Dalal'
+    first: 'Sarah'
   }
   const nameList = [
     {
@@ -24,9 +26,13 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet name='Sarah' age={23} isLoggedIn={false} />
+      <Greet name='Sarah' isLoggedIn={true} />
       <Person name={personName} />
       <PersonList name={nameList} />
+      <Status status='success' />
+      <Oscar>
+        <Heading>And here you are, learning Typescript!</Heading>
+      </Oscar>
     </div>
   );
 }

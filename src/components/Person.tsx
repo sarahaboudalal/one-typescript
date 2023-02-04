@@ -3,11 +3,11 @@ import React from 'react'
 type PersonProps = {
     name: {
         first: string
-        last: string
+        last?: string
     }
 }
 export default function Person(props: PersonProps) {
     return (
-        <div>Hello {props.name.first} {props.name.last}!</div>
+        <div><h1>Hello {props.name.first} {props.name.last}!</h1></div>
     )
 }

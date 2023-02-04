@@ -12,7 +12,7 @@ export default function PersonList(props: PersonListProps) {
     <div>
       {props.name.map((person) => {
         return (
-          <h1>{person.first} {person.last}</h1>
+          <h2>{person.first} {person.last}</h2>
         )
       })}
 
