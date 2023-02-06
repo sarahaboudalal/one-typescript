@@ -1,10 +1,6 @@
 import './App.css';
-import { Counter } from './components/class/Counter';
-import DomRef from './components/ref/DomRef';
-import MutableRef from './components/ref/MutableRef';
-// import User from './components/context/User';
-// import { UserContextProvider } from './components/context/UserContext';
-
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 
 
 
@@ -13,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <Counter message='the count is'/>
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
